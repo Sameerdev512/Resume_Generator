@@ -14,9 +14,9 @@
     position:relative;
 }
 
-#cv-form{
-    display: none; 
-}
+/* #cv-form{
+    display: none;  
+}*/
 
 /* Resume Desing CSS */
 
@@ -50,9 +50,9 @@
 
 #myimg{
     position:relative;
-    width:200px;
-    height:200px;
-    border-radius:100px;
+    width:250px;
+    height:250px;
+    border-radius:125px;
 }
 
 #c_Name{
@@ -88,7 +88,7 @@
     margin-left:10px;
     color:white;
     font-size: 17px;
-    padding-bottom:35px;
+    padding-bottom:20px;
     border-bottom:2px solid rgb(46, 13, 154);
 }
 
@@ -101,11 +101,24 @@
     margin-left:10px;
     color:white;
     font-size: 17px;
-    padding-bottom:35px;
+    padding-bottom:20px;
     border-bottom:2px solid rgb(46, 13, 154);
 }
 
 .hobbies ul li {
+    /* display: inline-block; */
+    list-style:circle;
+}
+
+.language{
+    margin-top:30px;
+    margin-left:10px;
+    color:white;
+    font-size: 17px;
+    padding-bottom:20px;
+}
+
+.language ul li {
     /* display: inline-block; */
     list-style:circle;
 }
@@ -159,6 +172,18 @@
     list-style: none;
 }
 
+
+.c_Education {
+    margin:0 18px;
+    height:max-content;
+    font-size: 16px;
+    padding-bottom:20px;
+}
+
+.c_Education ul li{
+    list-style: none;
+}
+
 .c_refrence {
     margin:0 18px;
     height:max-content;
@@ -173,6 +198,7 @@
 .title2{
     font-size: 23px;
     margin-left:10px;
+    margin-bottom:-10px;
 }
 
 
@@ -187,5 +213,11 @@
 
     .c_objective{
         font-size: 13px;
+    }
+
+    #myimg{
+        width:200px;
+        height:200px;
+        border-radius: 100px;
     }
 }

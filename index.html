@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Resume Pro</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,12 +126,16 @@
                     <h2>Education Details</h2>
 
                     <!-- first Education Details -->
-                    <input type="text" class="form-control my-2"
-                        placeholder="University-name ,Degree-name ,Percentage ,Year">
+                    <input type="text" class="form-control my-2 edu_details"
+                        placeholder="University-name">
+                        <textarea type="text" class="form-control my-2 edu_details"
+                        placeholder="University-name ,Degree-name ,Percentage ,Year"></textarea>
 
                     <!-- second Education Details -->
-                    <input type="text" class="form-control my-2"
-                        placeholder="University-name ,Degree-name ,Percentage ,Year">
+                    <input type="text" class="form-control my-2 edu_details"
+                        placeholder="University-name ">
+                        <textarea type="text" class="form-control my-2 edu_details"
+                        placeholder="University-name ,Degree-name ,Percentage ,Year"></textarea>
                     <div class="d-grid gap-2 col-1 mx-auto my-2" id="addEduDetailsBtn">
                         <button type="button" class="btn btn-primary" onclick="addEduDetails()">add</button>
                     </div>
@@ -297,10 +301,6 @@
                     <h2 class="title">SKILLS : </h2>
                     <ul id="c_skill">
                         <li>C++ Developer</li>
-                        <li>C Developer</li>
-                        <li>JavaScript</li>
-                        <li>Html</li>
-                        <li>CSS</li>
                     </ul>
                 </div>
 
@@ -309,8 +309,14 @@
                     <ul id="c_hobbies">
                         <li>Badminton</li>
                         <li>Chess</li>
-                        <li>Gardning</li>
-                        <li>Web Design</li>
+                    </ul>
+                </div>
+
+                <div class="language">
+                    <h2 class="title">LANGUAGES</h2>
+                    <ul id="c_lang">
+                        <li>Badminton</li>
+                        <li>Chess</li>
                     </ul>
                 </div>
             </div>
@@ -344,6 +350,15 @@
                         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique commodi id omnis
                             assumenda ipsa inventore. Sed quod magni nam quos totam. Doloribus quidem dolor temporibus
                             velit esse consequatur, animi, nobis explicabo iure soluta sapiente.</li>
+                    </ul>
+                </div>
+
+                <div class="c_Education">
+                    <h3 class="title2">EDUCATION</h3>
+                    <ul id="c_edu">
+                        <li>RGPV</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsum temporibus modi quasi
+                            omnis earum dolor accusantium quia, excepturi porro at sit similique!</li>
                     </ul>
                 </div>
 

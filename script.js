@@ -14,13 +14,21 @@ function addskill(){
 function addEduDetails(){
     let EduDetails = document.getElementById("Education");
 
-    let newNode= document.createElement("input");
-    newNode.classList.add("form-control");
-    newNode.classList.add("my-2");
-    newNode.setAttribute("placeholder","University-name ,Degree-name ,Percentage ,Year")
+    let newNode1= document.createElement("input");
+    newNode1.classList.add("form-control");
+    newNode1.classList.add("my-2");
+    newNode1.classList.add("edu_details");
+    newNode1.setAttribute("placeholder","University-name")
+
+    let newNode2= document.createElement("input");
+    newNode2.classList.add("form-control");
+    newNode2.classList.add("my-2");
+    newNode2.classList.add("edu_details");
+    newNode2.setAttribute("placeholder","University-name ,Degree-name ,Percentage ,Year")
 
     let EduDetailsbtn = document.getElementById("addEduDetailsBtn");
-    EduDetails.insertBefore(newNode,EduDetailsbtn)
+    EduDetails.insertBefore(newNode1,EduDetailsbtn)
+    EduDetails.insertBefore(newNode2,EduDetailsbtn)
 }
 
 function addExpDetails(){
@@ -50,6 +58,7 @@ function addLang(){
     let newNode= document.createElement("input");
     newNode.classList.add("form-control");
     newNode.classList.add("my-2");
+    newNode.classList.add("Lang_Field");
     newNode.setAttribute("placeholder","Enter language name")
 
     let langbtn = document.getElementById("addLangBtn");
@@ -180,6 +189,16 @@ function generateResume()
     let rhobby = document.getElementById('c_hobbies');
     rhobby.innerHTML = str5;
 
+    //setting languages
+    let lang = document.getElementsByClassName('Lang_Field');
+    let str7 = " ";
+    for(let e of lang)
+    {
+        str7 = str7 + `<li>${e.value}</li>`
+    }
+    let rlang = document.getElementById('c_lang');
+    rlang.innerHTML = str7;
+
     //setting Objective
     let obj = document.getElementById('Objective').value;
     let r_obj = document.getElementById('c_objective');
@@ -204,6 +223,26 @@ function generateResume()
     }
     let rname = document.getElementById("c_experience_details");
     rname.innerHTML = str1;
+
+    //setting Education Field
+    let count3 = 0;
+    let edu = document.getElementsByClassName('edu_details');
+    let str6 = " ";
+    for(let e of edu)
+    {
+        if(count3 % 2 == 0)
+        {
+            str6 = str6 + `<br><li><b>${e.value}</b></li>`.toUpperCase(); 
+            count3++;
+        }
+        else
+        {
+            str6 = str6 + `<li>${e.value}</li>`; 
+            count3++;
+        }
+    }
+    let r_edu = document.getElementById("c_edu");
+    r_edu.innerHTML = str6;
 
     //setting Certification field
     let count1 = 0;
