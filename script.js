@@ -18,7 +18,7 @@ function addEduDetails(){
     newNode1.classList.add("form-control");
     newNode1.classList.add("my-2");
     newNode1.classList.add("edu_details");
-    newNode1.setAttribute("placeholder","University-name")
+    newNode1.setAttribute("placeholder","Institute-name")
 
     let newNode2= document.createElement("input");
     newNode2.classList.add("form-control");
@@ -72,7 +72,7 @@ function addcrtfDetails(){
     newNode.classList.add("form-control");
     newNode.classList.add("my-2");
     newNode.classList.add("crtf_Details");
-    newNode.setAttribute("placeholder","Organisation Name")
+    newNode.setAttribute("placeholder","Certification Name")
 
     let newNode2= document.createElement("textarea");
     newNode2.classList.add("form-control");
