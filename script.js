@@ -78,7 +78,7 @@ function addcrtfDetails(){
     newNode2.classList.add("form-control");
     newNode2.classList.add("my-2");
     newNode2.classList.add("crtf_Details");
-    newNode2.setAttribute("placeholder","Certifiaction Details")
+    newNode2.setAttribute("placeholder","Enter Certifiaction Details")
 
     let crtfDetailsbtn = document.getElementById("addcrtfDetailsBtn");
     crtfDetails.insertBefore(newNode,crtfDetailsbtn)
